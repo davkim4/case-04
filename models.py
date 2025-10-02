@@ -23,5 +23,6 @@ class SurveySubmission(BaseModel):
         
 #Good example of inheritance
 class StoredSurveyRecord(SurveySubmission):
+    submission_id: str
     received_at: datetime
     ip: str
